@@ -26,7 +26,7 @@ public class PhotoController {
         return photoService.getAllPhotos();
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     public SwimPhoto getPhotoById(@Valid @PathVariable int id) {
         return photoService.getPhotoById(id);
     }
